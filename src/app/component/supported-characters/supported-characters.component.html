@@ -1,0 +1,14 @@
+<div class="supported-characters">
+    <div class="row">
+        <ng-container *ngFor="let char of supportedCharacters">
+            <div class="col-md-2" *ngIf="char != null">
+                <div class="card text-center" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{char.character}}</h5>
+                      <p class="card-text">{{char.htmlEntities}}</p>
+                    </div>
+                  </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
